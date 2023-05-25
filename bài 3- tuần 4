@@ -1,0 +1,23 @@
+public class PartTimeEmployee extends Employee {
+	private int hoursPerWeek;
+
+	public PartTimeEmployee(String name,int tuoi,String gender,String employeeName,String date,int hoursPerWeek) {
+		super(name,tuoi,gender,employeeName,date);
+		this.hoursPerWeek = hoursPerWeek;
+	}
+
+	public int getHoursPerWeek() {
+		return hoursPerWeek;
+	}
+
+	public void setHoursPerWeek(int hoursPerWeek) {
+		this.hoursPerWeek = hoursPerWeek;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString()+"PartTimeEmployee HoursPerWeek: " + hoursPerWeek + "|";
+	}
+	
+	
+}
